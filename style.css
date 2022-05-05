@@ -1,0 +1,742 @@
+/*Fonts*/
+
+@font-face{
+    font-family: 'IBMPlexSans-Bold';
+    src: url("./fonts/IBMPlexSans-Bold.ttf");
+}
+
+@font-face{
+    font-family: "IBMPlexSans-Light";
+    src: url("./fonts/IBMPlexSans-Light.ttf");
+}
+
+@font-face{
+    font-family: "IBMPlexSans-Medium";
+    src: url("./fonts/IBMPlexSans-Medium.ttf");
+}
+
+@font-face{
+    font-family: "Lato-Black";
+    src: url("./fonts/Lato-Black.ttf");
+}
+
+@font-face{
+    font-family: "Lato-Bold";
+    src: url("./fonts/Lato-Bold.ttf");
+}
+
+/* Variables */
+
+:root{
+    --cinza-1d: #1D1D1D;
+    --cinza-70: #707070;
+    --cinza-4d: #4D4D4D;
+    --dourado-b4: #B47D33;
+    --dourado-b1: #B17E3B ;
+    --dourado-a9: #A97339;
+    --branco: #FFFFFF; 
+    --preto: #000; 
+}
+
+/* Main tags */
+
+body{
+    max-width: 1280px !important;
+    margin: auto;
+}
+
+/* Header */
+
+.top-bar{
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.title{
+    font-family: 'IBMPlexSans-Bold';
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+    text-align: center;
+    margin: 52px 0px 0px;
+}
+
+.top-line{
+    height: 1px;
+    background-color: var(--cinza-4d);
+    margin: 10px 55px 10px 55px;
+}
+
+/* Navbar */
+.navbar{
+    padding: 0px;
+}
+
+.navbar-nav{
+    margin: auto ;
+}
+
+.nav-link{
+    font-family: 'Lato-Black', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+    margin: 0px 10px;
+}
+
+.nav-link:active, .nav-link:hover, .nav-link:focus{
+    color: var(--dourado-b4);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(180, 125, 51, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+.custom-toggler.navbar-toggler {
+border-color: none;
+color: var(--dourado-b4);
+} 
+
+.dropdown-menu{
+    border-radius: 0px;
+    border: none;
+    margin-top: 17px;
+    padding: 10px 30px 35px;
+    box-shadow: 0px 7px 11px 5px rgba(0,0,0,0.1);
+}
+
+.dropdown-item{
+    font-family: 'IBMPlexSans-Medium', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--cinza-4d);
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus{
+    color: var(--dourado-b1);
+    background-color: transparent;
+}
+
+.nav-link.active{
+    color: var(--dourado-b1);
+}
+/* Carousel */
+
+.top-carousel{
+    margin-top: -158px;
+}
+.caption-c-nov{
+    position: absolute;
+    left: 0;
+    top: 274px; /* 122px + 152px (height cabecalho) = 274px */
+    text-align: left;
+    padding: 0px;
+}
+
+.caption-s-nov{
+    position: absolute;
+    left: 0;
+    top: 313px; /* 153px + 160px (height cabecalho) = 274px */
+    text-align: left;
+    padding: 0px;
+}
+
+.banner-margins{
+    padding: 0px;
+    margin-left: 100px;
+    margin-right: 80px !important;
+}
+
+.banner-text{
+    font-family: 'IBMPlexSans-Light', sans-serif;
+    font-size: 13px;
+    color: var(--cinza-4d);
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.novidade{
+    font-family: 'Lato-Bold', sans-serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: var(--dourado-b4);
+    text-transform: uppercase;
+}
+
+.banner-title-1{
+    font-family: 'IBMPlexSans-Light', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+}
+
+.banner-btn{
+    font-family: 'IBMPlexSans-Medium', sans-serif;
+    margin-top: 0px;
+    width: 120px !important;
+    height: 30px !important;
+    background-color: var(--dourado-b4);
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+}
+
+.banner-btn:hover, .banner-btn:active{
+    background-color: var(--cinza-4d) !important;
+}
+
+.btn-slide{
+    border-radius: 20px !important;
+    height: 20px !important;
+    width: 20px !important;
+    background-color: transparent !important;
+    border: 1px solid var(--cinza-4d) !important;
+    margin-right: 15px !important;
+    position: relative !important;
+    left: -43% !important;
+    margin-bottom: 10% !important;
+}
+
+.btn-slide.active{
+    background-color: var(--cinza-4d) !important;
+}
+
+
+/* Welcome Page */
+
+.welcome-page{
+    min-width: 1190px;
+    position: relative;
+    background-color: white;
+    z-index: 200 !important;
+    height: 538px;
+    box-shadow: -9px 9px 8px -1px rgba(0,0,0,0.1);
+    margin-left: 90px !important;
+    margin-top: -45px !important;
+}
+
+.about-me-pic{
+    margin-top: 75px; /*No word refere margin-top 40px mas 75px parece mais com imagem*/
+    box-shadow: 8px 8px 10px 5px rgba(0,0,0,0.1);
+    width: 312px;
+    height: 396px;
+}
+
+.about-me-section{
+    margin-left: 60px;
+    text-align: right;
+}
+
+.about-me-title{
+    padding: 0px;
+    margin-top: 85px; /*No word refere margin-top 30px mas 85px parece mais com imagem - +10px que a imagem em vez de -10px como descrito*/
+    font-family: 'IBMPlexSans-Medium', sans-serif;  /*No word refere IBMPlexSans-Bold mas o Medium é mais parecido com imagem*/
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+    text-align: left;
+}
+
+.about-me-text{
+    padding: 0px;
+    margin-top: 30px;
+    font-family: 'IBMPlexSans-Light', sans-serif;
+    font-size: 13px;
+    color: var(--cinza-4d);
+    text-align: justify;
+}
+
+.about-me-btn{
+    font-family: 'IBMPlexSans-Medium', sans-serif;
+    margin-top: 15px;
+    width: 120px;
+    height: 30px;
+    background-color: var(--dourado-b4);
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+}
+
+.about-me-btn:hover, .about-me-btn:active{
+    background-color: var(--cinza-4d) !important;
+}
+
+/* Ultimos Livros */
+
+.latest-books-section{
+    width: 1190px;
+    margin-left: 90px !important;
+}
+
+.latest-books-title{
+    padding: 0px;
+    margin-top: 85px;
+    font-family: 'IBMPlexSans-Medium', sans-serif; /*No word refere IBMPlexSans-Bold mas o Medium é mais parecido com imagem*/
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+}
+
+.latest-books-text{
+    padding: 0px;
+    margin-top: 23px;
+    margin-bottom: 0px;
+    font-family: 'IBMPlexSans-Light', sans-serif;
+    font-size: 13px;
+    color: var(--cinza-4d);
+    text-align: justify;
+}
+
+/* Cards */
+
+.cards-section{
+    width: 1190px;
+    margin-left: 90px;
+    margin-top: 46px; /* 70px - 24px (padding p-3 card) = 46px*/
+    min-height: 700px;
+    padding: 0px;
+}
+
+.card-title{
+    font-family: 'IBMPlexSans-Medium'; /*No word refere IBMPlexSans-Bold mas o Medium é mais parecido com imagem*/
+    font-size: 23px;
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+    padding: 0px;
+    margin: 14px 25px 0px; /*Margin-top: 30px - 16px (padding) = 14px*/
+}
+
+.card{
+    border: none;
+}
+
+.card-inside{
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.1);
+}
+
+.card-img-top{
+    border-radius: 0px !important;
+}
+
+.category{
+    margin: 10px 25px 0px;
+    font-family: 'Lato-Bold', sans-serif;
+    font-size: 13px;
+    color: var(--dourado-b4);
+    text-transform: uppercase;
+}
+
+.card-text{
+    font-family: 'IBMPlexSans-Light', sans-serif;
+    font-size: 13px;
+    color: var(--cinza-4d);
+    margin: 10px 25px 0px;
+}
+
+.cards-btn-section{
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 5px; /* +16px padding .card + 16px padding .card-body = 37px */
+    margin-bottom: 10px;
+}
+
+.card-btn{
+    font-family: 'IBMPlexSans-Medium', sans-serif; 
+    width: 120px;
+    height: 30px;
+    background-color: var(--dourado-b4);
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+    border-radius: 0px;
+    margin-right: 5px; /* 37px - 16px - 16px = 5px  */
+}
+
+.card-btn:hover, .card-btn:active{
+    background-color: var(--cinza-4d) !important;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 106px;
+}
+
+.bottom-bar{
+    max-width: 1280px !important;
+    margin-top: 106px;
+}
+
+.bottom-line{
+    height: 1px;
+    background-color: var(--cinza-70);
+    margin: 19px 55px; /* 27px - 8px (padding) = 19px*/
+    max-width: 1280px;
+    border: none;
+}
+
+.nav-link-bottom{
+    font-size: 16px;
+}
+
+/* Contacts */
+
+.contacts-section{
+    width: 80%;
+    margin-top: 50px !important;
+    margin: auto;
+}
+
+.title-footer{
+    font-family: 'IBMPlexSans-Medium', sans-serif; /*No word refere IBMPlexSans-Bold mas o Medium é mais parecido com imagem*/
+    font-size: 22px; /*No word refere 25px mas o 22px é mais parecido com imagem*/
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+}
+
+.social-media{
+    text-align: center;
+}
+
+.social-media > img{
+    margin: 0px 8px;
+}
+
+.follow-me{
+    text-align: center;
+}
+
+.contacts-subtitle{
+    margin-top: 20px !important;
+    font-family: 'IBMPlexSans-Medium', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 15px;
+    color: var(--dourado-b1);
+} 
+
+.contacts-img{
+    margin-top: 30px !important;
+}
+
+.contacts-text{
+    margin-top: 6px !important;
+    font-family: 'IBMPlexSans-Light';
+    font-weight: 15px;
+    color: var(--cinza-4d);
+}
+
+.telefone{
+    padding-left: 10px !important;
+}
+
+.email{
+    padding-left: 15px !important;
+}
+
+.complaints{
+    margin-top: 58px !important;
+}
+
+.ralc{
+    margin-left: 43px !important;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 3px; /* 88px - 58px (margin top complaint) - 27 px (margin social media icon) s = 3px  */
+    font-family: 'IBMPlexSans-Light';
+    font-size: 13px;
+    color: var(--cinza-4d);
+}
+
+.final-blank{
+    height: 70px;
+}
+
+/* Secondary Pages Common CSS  */
+
+.secondary-page-title-section{
+    min-width: 1190px;
+    position: relative;
+    background-color: white;
+    z-index: 200 !important;
+    height: 130px;
+    box-shadow: -9px 9px 8px -1px rgba(0,0,0,0.1);
+    margin-left: 90px !important;
+    margin-top: -45px !important;
+}
+
+.secondary-page-title{
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-family: 'Lato-Black', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--dourado-b4);
+}
+
+.secondary-page-subtitle{
+    text-transform: uppercase;
+    font-family: 'IBMPlexSans-Medium'; /*No word refere IBMPlexSans-Bold mas o Medium é mais parecido com imagem*/
+    font-size: 25px;
+    color: var(--cinza-4d);
+}
+
+/* Autor Page CSS */
+
+.autor-about-me-section{
+    max-width: 1190px !important;
+    margin-left: 90px !important;
+}
+
+.autor-about-me-pic{
+    margin-top: 65px;
+}
+
+.autor-about-me-text{
+    padding: 55px 90px 0px; /*No word refere 55px de padding mas o 105px é mais parecido com imagem*/
+    font-family: 'IBMPlexSans-Light';
+    font-size: 13px;
+    color: var(--cinza-4d);
+    margin: 0px;
+}
+
+.autor-go-back-btn{
+    font-family: 'IBMPlexSans-Medium', sans-serif;
+    margin-top: 75px;
+    width: 120px;
+    height: 30px;
+    background-color: var(--dourado-b4);
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+}
+
+.autor-go-back-btn:hover{
+    background-color: var(--cinza-4d) !important;
+}
+
+.autor-footer{
+    margin-top: 75px;
+}
+
+
+/* Livro 1 Page CSS */
+
+.livros-books-section{
+    max-width: 1190px !important;
+    margin-left: 90px !important;
+    margin-top: 65px !important;
+}
+
+.livros-text{
+    font-family: 'IBMPlexSans-Light';
+    font-size: 13px;
+    color: var(--cinza-4d);
+    margin: 0px 70px 0px 44px;  /* Margin-right diz 57px mas 70px fica melhor  */
+}
+
+.livros-go-back-btn{
+    font-family: 'IBMPlexSans-Medium', sans-serif;
+    margin-top: 103px; /* Margin-top 75px + 28 (btn-size) = 103px */
+    width: 120px;
+    height: 30px;
+    background-color: var(--dourado-b4);
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+}
+
+.livros-go-back-btn:hover{
+    background-color: var(--cinza-4d) !important;
+}
+
+.livros-footer{
+    margin-top: 75px;
+}
+
+/* Livro 2 Page CSS */
+
+.livro2-text{
+    font-family: 'IBMPlexSans-Light';
+    font-size: 13px;
+    color: var(--cinza-4d);
+    margin: 11px 70px 0px 44px;  /* Margin-right diz 57px mas 70px fica melhor  */
+}
+
+.livro2-go-back-btn{
+    margin-top: 45px; 
+}
+
+.livro2-bottom-text-div{
+    margin-top: 30px !important;
+}
+
+/* Livro 3 Page CSS */
+
+.livro3-text{
+    line-height: 1.3;
+}
+
+.livro3-go-back-btn{
+    margin-top: 75px; 
+}
+
+/* Livro 4 Page CSS */
+
+.livro4-text{
+    line-height: 1.4;
+}
+
+.livro4-go-back-btn{
+    margin-top: 65px; 
+}
+
+
+/* Imprensa Page CSS */
+
+.publication-shaddow{
+    box-shadow: 0px 10px 7px -8px rgba(0,0,0,0.1);
+}
+
+.publication-title{
+    font-family: 'IBMPlexSans-Medium'; /*No word refere IBMPlexSans-Bold mas o Medium é mais parecido com imagem*/
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+    margin-top: 65px;
+}
+
+.publication, .imprensa-line, .publication-date{
+    padding: 0px 95px; /*Diz no word 85px mas 95 fica mais parecido com a imagem*/
+}
+
+.imprensa-line{
+    height: 1px;
+    background-color: var(--dourado-a9);
+    margin: 12px 95px 12px 95px; /*Diz no word 85px mas 95 fica mais parecido com a imagem*/
+}
+
+.publication-date{
+    font-family: 'IBMPlexSans-Medium';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+}
+
+.imprensa-pub{
+    margin: 40px 0px 60px;
+    width:fit-content;
+}
+
+.publication-title2{
+    margin-top: 80px;
+}
+
+.publication-text{
+    font-family: 'IBMPlexSans-Light';
+    font-size: 13px;
+    color: var(--cinza-4d);
+    padding: 0px 95px; /*Diz no word 85px mas 95 fica mais parecido com a imagem*/
+    margin-bottom: 90px !important;
+}
+
+.left-arrow-div-hover{
+    display: none;
+}
+
+.left-arrow-div:hover ~ .left-arrow-div-hover{
+    display: inline-block;
+}
+
+.left-arrow-div:hover{
+    display: none;
+}
+
+.right-arrow-div-hover{
+    display: none;
+}
+
+.right-arrow-div:hover ~ .right-arrow-div-hover{
+    display: inline-block;
+}
+
+.right-arrow-div:hover{
+    display: none;
+}
+
+/* .left-arrow-div, .left-arrow-div-hover, .right-arrow-div, .right-arrow-div-hover{
+    margin: 0px 20px;
+} */
+
+.right-arrow-div, .right-arrow-div-hover{
+    text-decoration: none;
+    margin-left: 43px; /*60px - 17px (margin-right .pagination-numbers) = 43px*/
+}
+
+.left-arrow-div, .left-arrow-div-hover{
+    text-decoration: none;
+    margin-right: 60px; /*60px - 17px (margin-right .pagination-numbers) = 43px*/
+}
+
+.arrow-img{
+    height: 30px;
+    width: 17px;
+    margin-bottom: 5px;
+}
+
+.pagination-numbers{
+    text-decoration: none;
+    font-family: 'IBMPlexSans-Medium' !important;
+    font-size: 23px !important;
+    color: var(--cinza-4d);
+    margin-right: 17px;
+}
+
+.pagination-numbers:hover, .pagination-numbers:active{
+    text-decoration: none;
+    color: var(--dourado-b1);
+}
+
+.imprensa-footer{
+    margin-top: 90px;
+}
+
+
+/* Contactos Page CSS */
+
+.contacts-subtitle2{
+    text-align: center;
+}
+
+.contacts-text2{
+    font-size: 14px; /*No word está 15px mas 14px fica mais parecido com a imagem*/
+}
+
+.contacts-cols{
+    width: 100%;
+    margin-top: 60px; /*20px (margin h1) + 60px = 80px*/
+}
+
+.line-contacts{
+    height: 1px;
+    width: 60px;
+    background-color: var(--cinza-70);
+    margin: 24px 0px 20px; /*16px (margin p) + 24px = 40px* || 20px(margin h1) + 20px = 40px*/
+}
+
+.contacts-footer{
+margin-top: 80px;
+}
+
